@@ -30,7 +30,7 @@ class GoogleCalendarService():
 
     @requires_auth_token
     def get_events(self, sync_token=None, token=None, timeout=TIMEOUT):
-        url = "/calendar/v3/calendars/primary/events"
+        url = "/calendar/v3/calendars/test/events"
         headers = {'Content-type': 'application/json'}
         params = {'access_token': token}
         if sync_token:
